@@ -3,7 +3,23 @@
 /* isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false
 otherwise. */
 
-// const assert = require("assert");
+/**
+ * check char is vowel.
+ * @param {any} x have to a char.
+ * @returns {string, boolean} true or not.
+ */
+
+function isVowel(x) {
+  if ("aeiouAEIOU".indexOf(x) != -1) {
+    console.log(x + " is vowel");
+    // return true;
+  } else {
+    console.log(x + " is not vowel");
+    // return false;
+  }
+  return x;
+}
+console.log(isVowel("5"));
 
 describe("isVowel", function () {
   it("a is vowel", function () {
@@ -28,4 +44,3 @@ describe("isVowel", function () {
     assert.equal(isVowel("5"), false);
   });
 });
-isVowel("abcdefg");
