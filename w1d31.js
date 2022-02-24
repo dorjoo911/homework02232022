@@ -1,25 +1,22 @@
 "use strict";
-/* global assert isVowel*/
+
+// /* global assert isVowel*/
 /* isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false
 otherwise. */
 
 /**
  * check char is vowel.
- * @param {any} x have to a char.
- * @returns {string, boolean} true or not.
+ * @param {string} xxx have to a char.
+ * @returns {boolean} true or not.
  */
-
-function isVowel(x) {
-  if ("aeiouAEIOU".indexOf(x) != -1) {
-    console.log(x + " is vowel");
-    // return true;
+const assert = require("assert");
+function isVowel(xxx) {
+  if ("aeiouAEIOU".indexOf(xxx) != -1) {
+    return console.log(xxx + " is vowel");
   } else {
-    console.log(x + " is not vowel");
-    // return false;
+    return console.log(xxx + " is not vowel");
   }
-  return x;
 }
-console.log(isVowel("5"));
 
 describe("isVowel", function () {
   it("a is vowel", function () {

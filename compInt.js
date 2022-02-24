@@ -1,7 +1,7 @@
 "use strict";
 
-// const { reverse } = require("dns");
-// module.exports = { compoundInterest };
+const { reverse } = require("dns");
+module.exports = { compoundInterest };
 
 let compoundInterest = (amount, rate, years) => {
   for (let i = 0; i < years * 12; i++) {

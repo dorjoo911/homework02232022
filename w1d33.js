@@ -4,10 +4,11 @@ each of the two test cases given for your compoundInterest function from the pre
 Import your compoundInterest code using CommonJS modules.
 */
 ("use strict");
+
 const assert = require("assert");
-// /* import from compInt.js module */
-// const functionsModule = require("./compInt.js");
-// const compoundInterest = functionsModule.compoundInterest;
+/* import from compInt.js module */
+const functionsModule = require("./compInt.js");
+const compoundInterest = functionsModule.compoundInterest;
 
 let compoundInterest = (amount, rate, years) => {
   for (let i = 0; i < years * 12; i++) {
